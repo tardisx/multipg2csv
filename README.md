@@ -26,3 +26,7 @@ PostgreSQL connection URL's are described here: https://www.postgresql.org/docs/
 
 Note that `multipg2csv` will use your .pgpass if available, and you should definitely use it,
 instead of supplying passwords on the command line.
+
+# Known bugs
+
+* Quitting while transfers are still in progress does not work correctly.
