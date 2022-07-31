@@ -82,6 +82,9 @@ func main() {
 			os.Exit(1)
 		}
 		defer f.Close()
+	} else {
+		w, _ := os.Open(os.DevNull)
+		log.SetOutput(w)
 	}
 
 	m := model{}
