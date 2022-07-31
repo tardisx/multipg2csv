@@ -24,7 +24,7 @@ Or maybe leverage your shell:
 
 PostgreSQL connection URL's are described here: https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
 
-Note that `multipg2csv` will use your .pgpass if available, and you should definitely use it,
+Note that `multipg2csv` will use your `.pgpass` file if available, and you should definitely use it,
 instead of supplying passwords on the command line.
 
 # Known bugs
