@@ -162,7 +162,6 @@ func main() {
 	log.Printf("waiting for final exit indicator")
 	<-finalExit
 	log.Printf("main finishing now")
-
 }
 
 func connectToHost(url string) (*pgx.Conn, error) {
@@ -330,17 +329,14 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		default:
 			return m, nil
 		}
-
 	}
-
 	return m, nil
 }
 
 func (m model) View() (s string) {
 
 	for i := range m.conns {
-
-		s += fmt.Sprintf("%c - %20s %s\n",
+		s += fmt.Sprintf("%c - %-30s %s\n",
 			m.conns[i].state,
 			m.conns[i].pgConnectionURL,
 			textStyle(m.conns[i].status),
