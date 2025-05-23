@@ -1,3 +1,7 @@
+# ARCHIVED - 2025-05-23
+
+Due to GitHub's AI enshittification, this project has been moved to https://code.ppl.town/justin/multipg2csv
+
 # multipg2csv
 
 multipg2csv allows you to run a single query against multiple postgresql instances
